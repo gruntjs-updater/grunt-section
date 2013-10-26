@@ -1,0 +1,7 @@
+.jshintrc
+.git*
+*.md
+tmp
+test
+Gruntfile.js
+.DS_Store
