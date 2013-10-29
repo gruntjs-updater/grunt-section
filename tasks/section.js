@@ -34,10 +34,15 @@ module.exports = function (grunt) {
       options: options,
       _: _,
       has: function () {
-        var keys = Array.prototype.slice.call(arguments);
+        var keyGroups = _.toArray(arguments);
         return function (page) {
-          return keys.every(function (key) {
-            return propExists(page, key);
+          return keyGroups.every(function (group) {
+            if (!Array.isArray(group)) {
+              group = [group];
+            }
+            return group.some(function (key) {
+              return propExists(page, key);
+            });
           });
         };
       }
