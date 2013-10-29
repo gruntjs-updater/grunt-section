@@ -1,7 +1,7 @@
 {
   "name": "grunt-section",
   "description": "A Grunt task that represents the backbone of Section—a modular static site generator for Node.js.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://section.iclanzan.com",
   "author": {
     "name": "Sorin Iclanzan",
@@ -26,7 +26,7 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
-    "test": "grunt"
+    "test": "node test"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.7.0",
