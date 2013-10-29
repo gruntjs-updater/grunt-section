@@ -1,4 +1,12 @@
 language: node_js
 node_js:
-  - "0.8"
-  - "0.10"
+- '0.8'
+- '0.10'
+deploy:
+  provider: npm
+  email: sorin@iclanzan.com
+  api_key:
+    secure: GScviuqXfegYKN+n/tKQOQQ3bxiUwsBxC0WFbGBLTdVNxkPudksbqRsvC1rlNBsjshK5EP6K63KL1tWSXq1JZYmJOXrDIyBVU/vHLBVTy1v+4wjDlTvo0ZrohgsS66CH16Sxl/KxFRrUmIY2nPgN2XurxAeWqPrsRaa1/imxBnw=
+  on:
+    repo: iclanzan/grunt-section
+    branch: master
