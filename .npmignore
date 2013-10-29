@@ -1,7 +1,11 @@
+.npmignore
 .jshintrc
+.editorconfig
+.travis.yml
 .git*
 *.md
 tmp
 test
+test.js
 Gruntfile.js
 .DS_Store
